@@ -4,6 +4,7 @@ import org.apache.log4j.BasicConfigurator;
 import org.apache.log4j.Logger;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
+import shorten.UrlMapping;
 
 import java.io.IOException;
 import java.io.InputStream;
@@ -28,7 +29,7 @@ public class Application {
         log.info("==================START SCHEDULER CATEGORY SYNC==============");
         log.info("=============================================================");
 
-
+        UrlMapping.addUrl();
         SpringApplication.run(Application.class, args);
     }
 

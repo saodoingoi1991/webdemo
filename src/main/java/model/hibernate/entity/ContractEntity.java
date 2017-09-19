@@ -17,7 +17,7 @@ public class ContractEntity {
     private String linkImg;
     private Long statusPay;
     private Time createDate;
-    private String linkUrl;
+//    private String linkUrl;
 
     @Id
     @Column(name = "ID", nullable = false, precision = 0)
@@ -169,11 +169,11 @@ public class ContractEntity {
         return result;
     }
 
-    public String getLinkUrl() {
-        return linkUrl;
-    }
-
-    public void setLinkUrl(String linkUrl) {
-        this.linkUrl = linkUrl;
-    }
+//    public String getLinkUrl() {
+//        return linkUrl;
+//    }
+//
+//    public void setLinkUrl(String linkUrl) {
+//        this.linkUrl = linkUrl;
+//    }
 }

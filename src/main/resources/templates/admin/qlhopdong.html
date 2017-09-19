@@ -30,7 +30,7 @@
         <td th:text="${contract.getTotalValueContractVat()}"></td>
         <td th:text="${contract.getContractType()==1?'Hợp đồng dài hạn':'Hợp đồng ngắn hạn'}"></td>
         <td th:text="${contract.getStatusPay()==1?'Đã thanh toán':'Chưa thanh toán'}"></td>
-        <td><a th:href="${contract.getLinkUrl()}">View</a></td>
+        <td><a th:href="${contract.getLinkImg()}">View</a></td>
     </tr>
 </table>
 <footer th:replace="fragments/footer::footer"></footer>

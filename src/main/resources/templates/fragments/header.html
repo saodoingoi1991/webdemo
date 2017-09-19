@@ -7,7 +7,7 @@
             <a href="#" class="hamburger"></a>
             <nav>
                 <ul>
-                    <li><a th:href="/ContractManager">Quản lý hợp đồng</a></li>
+                    <li><a th:href="${@environment.getProperty('CONTRACT_MANAGER')}">Quản lý hợp đồng</a></li>
                     <li><a href="#">Rent</a></li>
                     <li><a href="#">Sell</a></li>
                     <li><a href="#">About</a></li>
