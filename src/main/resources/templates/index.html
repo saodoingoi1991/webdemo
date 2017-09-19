@@ -1,25 +1,12 @@
 <!DOCTYPE html>
-<html xmlns:th="http://www.thymeleaf.org">
+<html>
 <head>
-    <title>La Casa - Real Estate HTML5 Home Page Template</title>
-    <meta charset="utf-8"/>
-    <meta name="author" content="pixelhint.com"/>
-    <meta name="description" content="La casa free real state fully responsive html5/css3 home page website template"/>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0"/>
-
-    <link rel='stylesheet' th:href="@{css/reset.css}" th:src="@{css/reset.css}"/>
-    <!--<link rel='stylesheet'  href="css/reset.css" th:src="@{css/reset.css}"/>-->
-    <link rel="stylesheet" th:href="@{css/responsive.css}" th:src="@{css/responsive.css}"/>
-    <!--<link rel="stylesheet"  href="css/responsive.css" th:src="@{css/responsive.css}"/>-->
-    <!--<link rel="stylesheet" th:href="@{css/homestyle.css}" th:src="@{css/homestyle.css}"/>-->
-
-    <script type="text/javascript" src="js/jquery.js" th:src="@{js/jquery.js}"></script>
-    <script type="text/javascript" src="js/main.js" th:src="@{js/main.js}"></script>
+    <title>Trang chu</title>
+    <object th:include="fragments/head :: head" th:remove="tag"/>
 </head>
 <body>
 
 <div th:replace="fragments/header :: header"/>
-
 
 <section class="search">
     <div class="wrapper">
